@@ -1,0 +1,15 @@
+/home/thrcode/git/private/dot-net-services/App/bin/Debug/net8.0/App
+/home/thrcode/git/private/dot-net-services/App/bin/Debug/net8.0/App.deps.json
+/home/thrcode/git/private/dot-net-services/App/bin/Debug/net8.0/App.runtimeconfig.json
+/home/thrcode/git/private/dot-net-services/App/bin/Debug/net8.0/App.dll
+/home/thrcode/git/private/dot-net-services/App/bin/Debug/net8.0/App.pdb
+/home/thrcode/git/private/dot-net-services/App/obj/Debug/net8.0/App.GeneratedMSBuildEditorConfig.editorconfig
+/home/thrcode/git/private/dot-net-services/App/obj/Debug/net8.0/App.AssemblyInfoInputs.cache
+/home/thrcode/git/private/dot-net-services/App/obj/Debug/net8.0/App.AssemblyInfo.cs
+/home/thrcode/git/private/dot-net-services/App/obj/Debug/net8.0/App.csproj.CoreCompileInputs.cache
+/home/thrcode/git/private/dot-net-services/App/obj/Debug/net8.0/App.sourcelink.json
+/home/thrcode/git/private/dot-net-services/App/obj/Debug/net8.0/App.dll
+/home/thrcode/git/private/dot-net-services/App/obj/Debug/net8.0/refint/App.dll
+/home/thrcode/git/private/dot-net-services/App/obj/Debug/net8.0/App.pdb
+/home/thrcode/git/private/dot-net-services/App/obj/Debug/net8.0/App.genruntimeconfig.cache
+/home/thrcode/git/private/dot-net-services/App/obj/Debug/net8.0/ref/App.dll
