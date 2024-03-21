@@ -1,3 +1,5 @@
+using MyFirstMicroservice.Dtos;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,30 +16,31 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+List<CardsDto> cards = [
+    new (
+        "214214",
+        "Still",
+        "Ainda",
+        1,
+        "2024-04-01",
+        new DateOnly(2024, 4, 22)
+    ),
+];
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/", () =>
 {
-    var forecast = Enumerable.Range(1, 8).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    Console.WriteLine("I just got executed!");
-    return forecast;
+    return "Hello World";
+})
+.WithName("HelloWorld")
+.WithOpenApi();
+
+app.MapGet("/card", () =>
+{
+    return cards;
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+
